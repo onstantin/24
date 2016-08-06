@@ -73,22 +73,21 @@
 <body>	
 
 <?php if (empty($_SESSION['login'])) : ?>
-			<h2>Авторизация</h2>
-			<p><?= $msg ?></p>
-			<form action="" method="post">
-				<input type="text" name="login" placeholder="Введите логин" required>
-				<input type="password" name="password" placeholder="Введите пароль">
-				<input type="submit" value="OK">
-			</form>
-			
-			<h2>Регистрация</h2>			
-			<p><?= $err ?></p>
-			<form action="reg.php" method="post">
-				<input type="text" name="login" placeholder="Введите логин" required>
-				<input type="password" name="password" placeholder="Введите пароль" required>
-				<input type="submit" value="OK">
-			</form>
-			
+	<h2>Авторизация</h2>
+	<p><?= $msg ?></p>
+	<form action="" method="post">
+		<input type="text" name="login" placeholder="Введите логин" required>
+		<input type="password" name="password" placeholder="Введите пароль">
+		<input type="submit" value="OK">
+	</form>
+	
+	<h2>Регистрация</h2>			
+	<p><?= $err ?></p>
+	<form action="reg.php" method="post">
+		<input type="text" name="login" placeholder="Введите логин" required>
+		<input type="password" name="password" placeholder="Введите пароль" required>
+		<input type="submit" value="OK">
+	</form>
 <?php endif; ?>
 </body>
 </html>
