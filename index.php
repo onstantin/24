@@ -3,7 +3,7 @@
 	error_reporting(E_ALL);
 	
 	if (isset($_GET['exit'])) {
-		unset($_SESSION['isAdmin']);
+		session_unset();
 		session_destroy();
 		header("Location: index.php");	
 	}
@@ -40,14 +40,14 @@
 				}
 				else {
 					$msg = "Неверный пароль";
-					unset($_SESSION['login']);	
+					session_unset();	
 					break;
 				}
 			}
 			$n++;
 			if ($n == count($json)) {
 				$msg = "Такого пользователя не существует";	
-				unset($_SESSION['login']);					
+				session_unset();					
 			}
 		}
 	}	 	
