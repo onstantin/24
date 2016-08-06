@@ -1,0 +1,8 @@
+﻿h1, p, a, li {font-family: arial;}
+h1 {font-size: 20px;}
+input {display: block; margin: 10px 0;}
+form {padding: 10px; background: beige; width: 300px; border: 1px solid #e0e0cf;}
+a {color: #505050; text-decoration: none; border-bottom: 1px solid #e0e0cf; background: beige; padding: 2px 10px;}
+a:hover {background: #f1f1cb;}
+li {margin: 10px;}
+td {vertical-align: top;}
